@@ -1,0 +1,1024 @@
+/* Global --------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* MAIN TEXT STYLE --------------------------------------------------------------*/
+
+h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3em;
+  word-spacing: 2px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5em;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  font-size: 1.5em;
+  word-spacing: 2px;
+  color: #ffffff;
+}
+
+p {
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+span {
+  display: block;
+}
+
+/* MAIN NAV STYLE --------------------------------------------------------------*/
+
+nav {
+  background: rgba(0, 0, 0, 0.7);
+  height: 95px;
+  width: 100%;
+}
+
+.logotop {
+  width: 400px;
+  padding-left: 100px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #c8b180;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+/* MAIN BUTTON STYLE --------------------------------------------------------------*/
+
+.btn-main {
+  font-family: "Roboto Mono";
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #0449cc;
+  letter-spacing: 5px;
+  text-decoration: none;
+  padding: 15px 20px;
+  outline: 0;
+  border: 0;
+  width: 350px;
+  text-align: center;
+}
+
+.btn-main:hover {
+  background-color: #053b93;
+  color: #ffffff;
+}
+
+.btn-main:active {
+  background-color: #ffffff;
+  color: #0449cc;
+}
+
+/* HEADER --------------------------------------------------------------*/
+
+.header-img {
+  height: 880px;
+  border-bottom: 0.2px solid white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #0000),
+    url("../images/banner-hero-bw-1920-1200px-fallback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  left: 45%;
+  top: 20%;
+  color: #f1f1f1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content h1 {
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+.content p {
+  margin: 20px auto 0px auto;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 1.7em;
+  font-size: 20px;
+}
+
+.content .btn-main {
+  margin: 40px auto 0px auto;
+}
+
+/* MAIN SECTION HOME --------------------------- */
+
+section.fsec {
+  border-top: 1px solid white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #0000),
+    url("../images/next-launch-1920x950px.jpg");
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+section.flsec {
+  background: url("../images/Banner-bottom--home-1920x900px.jpg");
+  background-size: cover;
+  height: 580px;
+  background-repeat: no-repeat;
+}
+
+section.fssec {
+  height: 670px;
+  display: flex;
+  align-items: center;
+}
+
+.col-lt {
+  width: 50%;
+  margin: 0px auto 0px 0px;
+  height: 450px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-lt li span {
+  font: normal normal bold 70px/92px "Roboto Mono";
+
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.col-lt li {
+  font: normal normal bold 20px/26px "Roboto Mono";
+
+  padding: 0px 15px;
+  color: white;
+}
+
+/* COUNTDOWN SECTION --------------------------------------------------------------*/
+
+#countdown ul {
+  list-style: none;
+  display: flex;
+}
+
+#countdown {
+  margin: 20px auto 30px auto;
+}
+
+/* CONTACT --------------------------------------------------------------*/
+
+.header-contact-img {
+  height: 880px;
+  border-bottom: 0.2px solid white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #0000),
+    url("../images/Contact4-bw-1920-1200px.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.conus {
+  padding-top: 70px;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+input,
+textarea {
+  outline: 0;
+  border: 0;
+  width: 90%;
+  padding-left: 35px;
+  margin: 0px auto;
+}
+
+input {
+  height: 55px;
+}
+
+textarea {
+  margin-bottom: 40px;
+  resize: none;
+  height: 300px;
+}
+
+#sbu {
+  margin: 0px 0px 0px 37px;
+}
+
+::placeholder {
+  padding-left: 30px;
+  padding-top: 20px;
+  color: black;
+  font: normal normal normal 25px/35px "Roboto Mono";
+}
+
+form.contform {
+  margin: 30px auto 0px auto;
+  width: 1050px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conus h2 {
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+
+.conus p {
+  font: normal normal normal 25px/35px "Montserrat";
+  letter-spacing: 2.5px;
+  padding-top: 2%;
+  ;
+}
+
+.form p::first-letter {
+  text-transform: capitalize;
+}
+
+.form a {
+  color: white;
+}
+
+form {
+  margin-top: 50px;
+}
+
+form p {
+  margin: 20px auto;
+}
+
+form span {
+  height: 30px;
+  margin: 10px auto 30px 3.5%;
+  display: block;
+  color: #c8b180;
+  text-align: left;
+  font-weight: 600;
+}
+
+form span::first-letter {
+  text-transform: capitalize;
+}
+
+/* ABOUT --------------------------------------------------------------*/
+
+.header-about-img {
+  height: 880px;
+  border-bottom: 0.2px solid white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #0000),
+    url("../images/About2-bw-1920-1200px.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.abtus {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.abtus p {
+  margin-top: 30px;
+  font: normal normal normal 25px/35px "Montserrat";
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.abt-rt {
+  width: 40%;
+  margin: 0px auto;
+}
+
+.col-rt {
+  width: 45%;
+  margin: 0px auto;
+}
+
+.col-left {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0px auto;
+}
+
+.col-left h2,
+.abtus h2,
+.conus h2 {
+  text-align: center;
+  font: normal normal bold 50px/61px "Montserrat";
+}
+
+.abt-rt img {
+  display: flex;
+  width: 85%;
+  margin: 0px auto;
+}
+
+.abt-lt {
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.h3-about {
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5em;
+  word-spacing: 2px;
+  color: #ffffff;
+}
+
+.abt h1 {
+  letter-spacing: 3px;
+}
+
+.abtus h2 {
+  letter-spacing: 3px;
+}
+
+
+.abt-lt p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  font-family: "Montserrat";
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 20px
+}
+
+.ttm {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  margin: 0px auto;
+  border-top: 1px solid white;
+}
+
+.col-rt h2 {
+  text-align: center;
+  width: 545px;
+}
+
+.col-left img {
+  height: 420px;
+}
+
+.col-rt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 68%;
+  flex-direction: column;
+}
+
+.col-rt p {
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 1.7em;
+  font-size: 20px;
+}
+
+.abtlast {
+  background: url(../images/Banner-bottom2-1920x900px.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+/* LAUNCHES --------------------------------------------------------------*/
+
+p .space-text {
+  margin-top: 60px;
+}
+
+.header-launches-img {
+  height: 880px;
+  border-bottom: 0.2px solid white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #0000),
+    url("../images/Launches-bw-1920-1200px.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lcard {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  background: white;
+  margin: 105px auto 45px auto;
+}
+
+.leftarea {
+  width: 35%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rarea {
+  width: 65%;
+  margin: 0px auto;
+}
+
+.toparea h3 {
+  text-align: left !important;
+  color: #0449cc;
+  font: "Montserrat";
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.toparea p {
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  color: #0449cc;
+}
+
+.botarea img {
+  margin-right: 20px;
+  width: 20px;
+}
+
+.botarea {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+p.pdate {
+  text-align: left;
+  font-family: "Roboto Mono";
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+  color: #1a1a1a;
+}
+
+/* FOOTER --------------------------------------------------------------*/
+
+footer {
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+  border-top: 2px solid #ffffff;
+
+}
+
+.footer-text {
+  padding-top: 0px;
+}
+
+.footer-font p {
+  color: #fff;
+  font: normal normal normal 16px/22px "Montserrat";
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.social-media {
+  padding-bottom: 15px;
+}
+
+.icon-social {
+  color: white;
+  width: 35px;
+  padding: 15px;
+  font-size: 28px;
+}
+
+.icon-social:hover {
+  opacity: 0.9;
+  color: #c8b180;
+}
+
+
+
+/* MEDIA QUERIES RESPONSIVE   --------------------------------------------------------------*/
+
+/* Nav  --------------------------------------------------------------*/
+
+@media (max-width: 950px) {
+  .logotop {
+    width: 250px;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    z-index: 99999 !important;
+    background: rgba(0, 0, 0, 0.854);
+  }
+
+  .ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.854);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 99999 !important;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #ffffff;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+/* Header  --------------------------------------------------------------*/
+
+@media screen and (min-width: 1180px) {
+  .content {
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 777px) and (max-width: 850px) {
+  .content {
+    left: 30%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  header {
+    height: 882px;
+  }
+}
+
+
+/* Home  --------------------------------------------------------------*/
+
+@media screen and (max-width: 519px) {
+
+  .col-lt li,
+  .col-lt li span {
+    font-size: 20px;
+  }
+
+  .col-lt li {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 776px) {
+
+  .col-lt li,
+  .col-lt li span {
+    font-size: 28px;
+  }
+}
+
+
+/* About  --------------------------------------------------------------*/
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  .abtus h2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  .h3-about {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 777px) and (max-width: 991px) {
+  .abtus p {
+    font-size: 20px;
+    line-height: 1.7em;
+  }
+
+  .abt-lt p {
+    line-height: 1.5em;
+    font-size: 25px;
+  }
+
+  .abt-rt img {
+    width: 70%;
+    margin-top: 40px;
+  }
+
+  .abtus h2 {
+    margin-bottom: 40px !important;
+  }
+
+  .abtus {
+    padding-bottom: 80px;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .abtlast {
+    height: 520px;
+  }
+
+  .abtlast img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 991px) {
+  .abtus p {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .abt-lt,
+  .abt-rt {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+
+  .ttm {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .abtus {
+    height: auto;
+    width: 100%;
+  }
+
+  .abtlast {
+    height: 400px;
+  }
+
+  .abtlast img {
+    height: 100%;
+  }
+
+  .ttm {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .lcard {
+    width: 100%;
+    height: auto;
+  }
+
+  .leftarea img {
+    margin: 40px auto 30px auto;
+  }
+
+  section.fssec {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 90%;
+    margin: 0px auto;
+    padding: 60px 0px;
+  }
+
+  .col-left,
+  .col-rt,
+  .col-rt h2 {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .col-left {
+    padding: 40px 0px;
+  }
+
+  .col-rt {
+    height: auto;
+  }
+
+  .col-rt h2,
+  .col-rt p {
+    padding-bottom: 30px;
+  }
+}
+
+/* Contact  --------------------------------------------------------------*/
+
+@media screen and (max-width: 1052px) {
+  .conus {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  form.contform {
+    display: flex;
+    width: 100%;
+    margin: 40px auto 20px auto;
+  }
+
+  form.contform input {
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 777px) and (max-width: 1052px) {
+  #sbu {
+    margin-top: 40px;
+    margin-left: 3%;
+  }
+}
+
+/* Launches  --------------------------------------------------------------*/
+
+@media screen and (max-width: 886px) {
+  .lcard {
+    flex-direction: column;
+  }
+
+  .leftarea,
+  .rarea {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+@media screen and (max-width: 665px) {
+  .leftarea {
+    margin: 20px auto 50px auto;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .leftarea img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 340px) and (max-width: 886px) {
+  .leftarea img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1053px) {
+  .lcard {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 887px) and (max-width: 1099px) {
+  .rarea {
+    width: 60%;
+    padding: 50px 0px;
+  }
+
+  .leftarea img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .leftarea img {
+    width: 345px;
+    height: 345px;
+  }
+}
+
+
+/* General  --------------------------------------------------------------*/
+
+@media screen and (min-width: 120px) and (max-width: 480px) {
+  .btn-main {
+    width: 90%;
+    margin: 20px auto !important;
+  }
+
+  .conus {
+    padding-bottom: 50px;
+  }
+
+  .col-left img {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+}
+
+@media screen and (max-width: 776px) {
+
+  .abt-lt p {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .abtus p {
+    font-size: 18px;
+  }
+
+  .abt-rt img {
+    width: 80%;
+  }
+
+  .abtus {
+    padding-bottom: 40px;
+    padding-top: 70px;
+  }
+
+  .col-lt {
+    height: 100%;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .content {
+    align-items: center;
+    left: 0%;
+    width: 90%;
+    margin: 50px auto;
+    right: 0%;
+  }
+
+  .flsec {
+    background-size: 100% 100% !important;
+    height: 300px !important;
+  }
+
+  .fsec {
+    background-size: 100% 100% !important;
+    height: 400px !important;
+    width: auto;
+    padding: 40px 0px;
+  }
+
+  .col-left img {
+    margin-top: 40px;
+  }
+
+  .footer-font p {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  #sbu {
+    margin: 30px auto 0px auto;
+  }
+
+  form span {
+    width: 90%;
+    margin: 10px auto 20px auto !important;
+  }
+
+  form.contform textarea {
+    margin-bottom: 30px;
+  }
+
+  .col-lt h2 {
+    font-size: 36px;
+    width: 100%;
+    margin: 0px auto 15px auto;
+  }
+
+  .col-rt h2 {
+    font-size: 30px;
+  }
+
+  .toparea p {
+    font-size: 28px;
+  }
+
+  #countdown ul {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content h1,
+  .abt-lt h1 {
+    letter-spacing: 3px;
+  }
+
+  .col-lt h1 {
+    text-align: center;
+  }
+
+  .col-lt h2 {
+    text-align: center;
+  }
+
+  #countdown {
+    width: 100%;
+    margin: 0px auto 20px auto;
+  }
+}

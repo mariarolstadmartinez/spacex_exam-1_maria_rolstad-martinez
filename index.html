@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="SpaceX , microsite for future trip to the moon,Exam project at Noroff Front-end development" />
+    <meta name="keywords"
+        content="SpaceX, microsite, space science, moon trip, moon travel, space mission, space rocket, rocket launches, launch countdown, information site" />
+    <meta name="author" content="Maria Rolstad-Martinez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceX | Home</title>
+    <link rel="shortcut icon" type="image/png" href="svg/Favicon.svg" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/db094b32dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="header-img" alt="Astronaut in outer space on orbit of the planet Earth">
+            <!-- Adobe standard license -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars" alt="hamburger menu icon"></i>
+                </label>
+                <label>
+                    <a href="index.html">
+                        <img src="svg/spacex-white_logo.svg" class="logotop" alt="microsite logo"></a>
+                    <!--Icon from freepik - premium Freepik License, logo edit and design by me > -->
+                </label>
+                <ul class="ul">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="launches.html">Launches</a></li>
+                </ul>
+            </nav>
+
+            <!-- Content text area -->
+            <div class="content">
+                <h1>To the moon and back</h1>
+                <p>SpaceX designs, manufactures and launches advanced rockets and spacecraft</p>
+                <a href="about.html" class="btn-main">More information</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Count down area -->
+        <section class="fsec" alt="Astronaut near the moon rover on the moon">
+            <!-- Adobe standard license -->
+
+            <div class="col-lt">
+                <h2>NEXT LAUNCH</h2>
+
+                <div id="countdown">
+                    <ul>
+                        <li><span id="days"></span>days</li>
+                        <li><span id="hours"></span>Hours</li>
+                        <li><span id="minutes"></span>Minutes</li>
+                        <li><span id="seconds"></span>Seconds</li>
+                    </ul>
+                </div>
+
+                <a href="launches.html" class="btn-main">More information</a>
+
+            </div>
+        </section>
+
+        <!-- SpaceX moon trip infromation -->
+        <section class="fssec">
+
+            <div class="col-left">
+
+                <img src="svg/Spaceship-graphic.svg" alt="Rocket blueprint vector graphic">
+                <!-- Rocket blue print drawn in Illustrator by me -->
+            </div>
+
+            <div class="col-rt">
+
+                <h2>SpaceX’s private moon trip</h2>
+
+                <p>SpaceX vehicle Starship is SpaceX’s fully reusable transportation system designed to carry both crew
+                    and cargo to the Earth’s orbit, the Moon, Mars, and beyond.</p>
+                <!-- Text credit - https://www.spacex.com/human-spaceflight/moon/index.html -->
+
+                <a href="about.html" class="btn-main">Learn more</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="flsec" alt="Astronaut is walking on the moon">
+            <!-- Adobe standard license -->
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                class="icon-social"><i class="fab fa-twitter" alt="twitter icon"></i></a>
+            <a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank" class="icon-social"><i
+                    class="fab fa-youtube" alt="youtube icon"></i></a>
+            <a href="https://www.instagram.com/spacex/?hl=en" target="_blank" class="icon-social"><i
+                    class="fab fa-instagram" alt="instagram icon"></i></a>
+            <a href="https://www.linkedin.com/company/spacex" target="_blank" class="icon-social"><i
+                    class="fab fa-linkedin-in" alt="linkedin icon"></i></a>
+        </div>
+        <div class="footer-font">
+            <p>&copy;Space X 2020 Microsite All rights reserved | dev&design Maria Rolstad-Martinez</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/countdown.js"></script>
+
+</body>
+
+</html>

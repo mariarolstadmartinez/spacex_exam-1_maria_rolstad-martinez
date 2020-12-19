@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="For inquiries about our private passenger program for Spacex, send us a message!" />
+    <meta name="keywords"
+        content="Contact SpaceX, microsite, mail us, send us a message, moon travel, space mission, space rocket, information site" />
+    <meta name="author" content="Maria Rolstad-Martinez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceX | Contact</title>
+    <link rel="shortcut icon" type="image/png" href="svg/Favicon.svg" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/db094b32dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="header-contact-img" alt="Two Astronauts in Space Suits Walk on moon">
+            <!-- Adobe standard license -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label>
+                    <a href="index.html">
+                        <img src="svg/spacex-white_logo.svg" class="logotop" alt="microsite logo"></a>
+                    <!--Icon from freepik - premium Freepik License, logo edit and design by me > -->
+                </label>
+                <ul class="ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <li><a href="launches.html">Launches</a></li>
+                </ul>
+            </nav>
+
+            <!-- Content text area -->
+            <div class="content">
+                <h1>Start planning your journey</h1>
+                <p>SpaceX also offers commercial flights for private passengers to both Earth and Lunar orbit.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- contact us content and form -->
+        <section class="conus">
+            <h2>CONTACT</h2>
+
+            <p>For inquiries about our private passenger program, send us a message!</p>
+
+            <form class="contform" action="#" method="GET" name="RegForm" onsubmit="jsform(); return false">
+
+                <input type="text" name="firstname" id="first_name" placeholder="*First Name" />
+                <span id="fname" class="firstname"></span>
+                <input type="text" name="lastname" id="last_name" placeholder="*Last Name" />
+                <span id="lname"></span>
+                <input type="text" name="email" placeholder="*Email address" />
+                <span id="email"></span>
+                <textarea placeholder="*Your message"></textarea>
+                <button type="submit" value="Submit" class="btn-main" id="sbu">Submit</button>
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                class="icon-social"><i class="fab fa-twitter" alt="twitter icon"></i></a>
+            <a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank" class="icon-social"><i
+                    class="fab fa-youtube" alt="youtube icon"></i></a>
+            <a href="https://www.instagram.com/spacex/?hl=en" target="_blank" class="icon-social"><i
+                    class="fab fa-instagram" alt="instagram icon"></i></a>
+            <a href="https://www.linkedin.com/company/spacex" target="_blank" class="icon-social"><i
+                    class="fab fa-linkedin-in" alt="linkedin icon"></i></a>
+        </div>
+        <div class="footer-font">
+            <p>&copy;Space X 2020 Microsite All rights reserved | dev&design Maria Rolstad-Martinez</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/form.js"></script>
+
+</body>
+
+</html>
