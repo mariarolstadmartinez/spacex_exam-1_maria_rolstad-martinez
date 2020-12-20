@@ -348,12 +348,12 @@ form span::first-letter {
 }
 
 .abtus {
-  height: 600px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 85%;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 30px;
   margin: 0px auto;
   text-align: center;
@@ -364,6 +364,7 @@ form span::first-letter {
   font: normal normal normal 25px/35px "Montserrat";
   letter-spacing: 2.5px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .abt-rt {
